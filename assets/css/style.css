@@ -414,11 +414,16 @@ main {
   border-radius: 8px;
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+  transition: transform 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 12px;
+}
+.about_section .about_card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+  background-color: #20c46c;
 }
 .about_section .about_card img {
   height: 80px;
@@ -528,9 +533,9 @@ main {
 .findFriends .img img {
   width: 65%;
 }
-@media (max-width: 576px) {
+@media (max-width: 991px) {
   .findFriends .img img {
-    width: 80%;
+    display: none;
   }
 }
 @media (max-width: 576px) {
@@ -824,6 +829,7 @@ footer .copy p {
   color: #000;
   font-size: 14px;
   font-weight: 600;
+  text-align: center;
 }
 
 .services {
@@ -871,4 +877,79 @@ footer .copy p {
 }
 .services .row:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-slide .Comment_Card {
+  background-color: #eee;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.swiper-slide .Comment_Card .comment p {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: start;
+}
+.swiper-slide .Name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.swiper-slide .Name .info {
+  display: flex;
+  align-items: center;
+}
+.swiper-slide .Name .person {
+  border-radius: 50%;
+}
+.swiper-slide .Name span h3 {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  color: #000;
+}
+.swiper-slide .Name span p {
+  padding: 0;
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+
+.Features .Features_card {
+  padding: 19px;
+  background: #fff;
+  border-radius: 8px;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+  border: 1px dashed #c37739;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.3s;
+}
+.Features .Features_card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+.Features .Features_card img {
+  height: 80px;
+}
+.Features .Features_card h4 {
+  font-size: 16px;
+  color: #c37739;
 }/*# sourceMappingURL=style.css.map */
